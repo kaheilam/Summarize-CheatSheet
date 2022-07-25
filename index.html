@@ -1,0 +1,982 @@
+<!-- https://www.htmlhelp.com/reference/html40/entities/special.html -->
+<!-- https://www.w3schools.com/howto/default.asp -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML CheatSheet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="dropdown">
+                <button class="dropdown-btn">HTML</button>
+                <div class="dropdown-content">
+                    <a href="#html-element">Element</a>
+                    <a href="#html-form">Form</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">CSS</button>
+                <div class="dropdown-content">
+                    <a href="#css-selector-visualRule">Selectors & Visual Rules</a>
+                    <a href="#css-box-model">Box Model</a>
+                    <a href="#css-position">Display & Positioning</a>
+                    <a href="#css-flexbox">Flexbox</a>
+                    <a href="#css-link-button">Links & Button States</a>
+                    <a href="#css-sizing">Sizing Elements</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">JavaScript</button>
+                <div class="dropdown-content">
+                    <a href="#">a</a>
+                    <a href="#">b</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="dropdown-btn">MySQL</button>
+                <div class="dropdown-content">
+                    <a href="#">a</a>
+                    <a href="#">b</a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+<!---------------- HTML - Element ------------------>
+    <div id="html-element">
+        <table>
+            <!-- tr: table row -->
+            <tr>
+                <!--  th: table header -->
+                <th colspan="100">HTML - Common Element</th>
+            </tr>
+
+            <div class="element">
+            <tr>
+                <td>&lt;h1&gt;<br>&lt;/h1&gt; (to 6)</td>
+                <td>&lt;p&gt;<br>&lt;/p&gt;</td>
+                <td>&lt;br&gt;</td>
+                <td>&lt;hr&gt;</td>
+                <td>&lt;a&gt;<br>&lt;/a&gt;</td>
+                <td>&lt;strong&gt;<br>&lt;/strong&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;em&gt;<br>&lt;/em&gt;</td>
+                <td>&lt;img&gt;</td>
+                <td>&lt;table&gt;<br>&lt;/table&gt;</td>
+                <td>&lt;ol&gt;<br>&lt;/ol&gt;</td>
+                <td>&lt;ul&gt;<br>&lt;/ul&gt;</td>
+                <td>&lt;li&gt;<br>&lt;/li&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;form&gt;<br>&lt;/form&gt;</td>
+                <td>&lt;div&gt;<br>&lt;/div&gt;</td>
+                <td>&lt;header&gt;<br>&lt;/header&gt;</td>
+                <td>&lt;footer&gt;<br>&lt;/footer&gt;</td>
+                <td>&lt;main&gt;<br>&lt;/main&gt;</td>
+                <td>&lt;video&gt;</td>
+            </tr>
+            <tr>
+                <td>&lt;figure&gt;<br>&lt;/figure&gt;</td>
+                <td>&lt;figcaption&gt;<br>&lt;/figcaption&gt;</td>
+                <td>&lt;nav&gt;<br>&lt;/nav&gt;</td>
+                <td>&lt;article&gt;<br>&lt;/article&gt;</td>
+                <td>&lt;button&gt;<br>&lt;/button&gt;</td>
+                <td>&lt;iframe&gt;<br>&lt;/iframe&gt;</td>
+            </tr>
+            </div>
+        </table>
+    </div>
+
+
+<!---------------- HTML - Form ------------------>
+
+    <div id="html-form" class="html-form">
+    <table>
+        <!-- tr: table row -->
+        <tr>
+        <!--  th: table header -->
+            <th colspan="100">HTML - Form</th>
+        </tr>
+
+        <tr>
+            <td class="category" colspan="2">Textarea</td>
+            <td>
+                <label for='extra'></label>
+                <textarea id='extra' name="extra" rows='5' cols="30">Text Area</textarea>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="category" rowspan="7">&lt;input&gt; type</td>
+            <td >text</td>
+            <td>
+                <label for="name">Enter your name here:</label>
+                <input id="name" name="name" type="text" minlength="3" maxlength="100">
+                <br><br>
+                <label>You are smart, right?</label>
+                <input type="text" pattern="[yY]es">
+            </td>
+        </tr>
+
+        <tr>
+            <td>number</td>
+            <td>
+                <label for="age">Enter your age here:</label>
+                <input id="age" name="age" type="number" min="1" max="100" step="1">
+            </td>
+        </tr>
+
+        <tr>
+            <td>range</td>
+            <td>
+                <span>Left</span>
+                <input type="range" name="slider" value="0" min="1" max="10">
+                <span>Right</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>checkbox</td>
+            <td>
+                <input type="checkbox" name="boxes" value="first">
+                <label>First</label>
+                <input type="checkbox" name="boxes"  value="second">
+                <label>Second</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>radio</td>
+            <td>
+                <input type="radio" name="radio" value="true">
+                <label>TRUE</label>
+                <input type="radio" name="radio" value="false">
+                <label>FALSE</label>
+            </td>
+        </tr>
+
+        <tr>
+            <td>password</td>
+            <td>
+                <label for="userPassword">Enter password:</label>
+                <input id="userPassword" name="userPassword" type="password">
+            </td>
+        </tr>
+
+        <tr>
+            <td>submit</td>
+            <td>
+                <input type="submit" value="Submit">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="category">Dropdown List</td>
+            <td>
+                <label>
+                    &lt;select&gt;&lt;/select&gt;
+                    <br>
+                    &lt;option&gt;&lt;/option&gt;
+                </label>
+            </td>
+            <td>
+                <label for="choose">What would you choose?</label>
+                <select id="choose" name="choose">
+                    <option value="none">------</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="milk">Milk</option>
+                    <option value="tea">Tea</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="category">Data List</td>
+            <td>
+                <label>
+                    &lt;datalist&gt;&lt;/datalist&gt;
+                </label>
+            </td>
+            <td>
+                <label>
+                    It is used with text type.
+                    If none of the options match, <br>
+                    user still can use what they typed in.
+                </label>
+                <br><br>
+                <label>What would you choose?</label>
+                <input type="text" list="choices" id="choice" name="choice">
+                <datalist id="choices">
+                    <option value="------"></option>
+                    <option value="Coffee"></option>
+                    <option value="Milk"></option>
+                    <option value="Tea"></option>
+                </datalist>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="category" rowspan="4">Form Validation</td>
+            <td>required</td>
+            <td>There must be info provided before submission.</td>
+        </tr>
+        <tr>
+            <td>max / min</td>
+            <td>Set max or min value for a number field.</td>
+        </tr>
+        <tr>
+            <td>maxlength / minlength</td>
+            <td>Check max / min number of a certain number of character.</td>
+        </tr>
+        <tr>
+            <td>pattern</td>
+            <td>Check if input matches the regex.</td>
+        </tr>
+
+    </table>
+    </div>
+
+<!---------------- CSS - Selector and Visual Rules ------------------>
+    <div id="css-selector-visualRule">
+    <table>
+        <tr>
+            <th colspan="100">CSS - Selectors & Visual Rules</th>
+        </tr>
+        <tr>
+            <td class="category" rowspan="2">Selectors</td>
+            <td>Class</td>
+            <td>Can be access by ".class"</td>
+        </tr>
+        <tr>
+            <td>ID</td>
+            <td>Can be access by "#id"</td>
+        </tr>
+
+        <tr>
+            <td class="category" rowspan="100">Visual Rules</td>
+        </tr>
+        <tr>
+            <td>font-family</td>
+            <td>Defines typeface.</td>
+        </tr>
+        <tr>
+            <td>font-size</td>
+            <td>Controls the size of the text displayed.</td>
+        </tr>
+        <tr>
+            <td>font-weight</td>
+            <td>Defines how thin or thick text is displayed.</td>
+        </tr>
+        <tr>
+            <td>text-align</td>
+            <td>Changes the horizontal alignment of text.</td>
+        </tr>
+        <tr>
+            <td>word-spacing</td>
+            <td>Changes how far apart individual words are.</td>
+        </tr>
+        <tr>
+            <td>letter-spacing</td>
+            <td>Changes how far apart individual letters are.</td>
+        </tr>
+        <tr>
+            <td>line-height</td>
+            <td>Changes how far apart between each line.</td>
+        </tr>
+        <tr>
+            <td>opacity</td>
+            <td>Defines the transparency of an element.</td>
+        </tr>
+        <tr>
+            <td>background-color</td>
+            <td>Defines the color behind the text.</td>
+        </tr>
+        <tr>
+            <td>background-image</td>
+            <td>Defines the background of an element to an image.</td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>Defines the color of the text.</td>
+        </tr>
+        <tr>
+            <td>opacity</td>
+            <td>Defines the transparency of an element.</td>
+        </tr>
+
+    </table>
+    </div>
+
+<!---------------- CSS - Box Model ------------------>
+    <div id="css-box-model">
+        <table>
+            <tr>
+                <th colspan="100">CSS - Box Model</th>
+            </tr>
+            <tr>
+                <td class="category" rowspan="7">Box Model</td>
+            </tr>
+            <tr>
+                <td>height / width</td>
+                <td>Can be set in pixels or %.</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>
+                    Surround the content area and padding of the element.
+                    <br>
+                    border: thickness style color
+                </td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>
+                    The space between the content area and border.
+                    <br>
+                    Can be set in pixels or %.
+                </td>
+            </tr>
+            <tr>
+                <td>margin</td>
+                <td>
+                    space outside the element's border
+                </td>
+            </tr>
+            <tr>
+                <td>overflow</td>
+                <td>
+                    Can be set to display, hidden, scroll.
+                    <br>
+                    It indicates how HTML will render content that overflows its parent's content area.
+                </td>
+            </tr>
+            <tr>
+                <td>visibility</td>
+                <td>Can hide or show elements.</td>
+            </tr>
+
+            <tr>
+                <td class="category" colspan="2">box-sizing</td>
+                <td>
+                    box-sizing: border-box
+                    <br>
+                    Avoid dimensional issues
+                </td>
+            </tr>
+
+        </table>
+    </div>
+
+<!---------------- CSS - Positioning ------------------>
+    <div id="css-position">
+    <table>
+        <tr>
+            <th colspan="100">CSS - Display & Positioning</th>
+        </tr>
+        <tr>
+           <td class="category" rowspan="6">Position</td>
+        </tr>
+        <tr>
+            <td>Static</td>
+            <td>Default value. No need to specify.</td>
+        </tr>
+        <tr>
+            <td>relative</td>
+            <td>
+                <ul>
+                    <li>Position element relative to its default static position on webpage.</li>
+                    <li>Relative element will not affect the positioning of other elements</li>
+                    <li>top, bottom, left, right</li>
+                    <li>Can be specify in pixels, ems, %</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>absolute</td>
+            <td>
+                <ul>
+                    <li>All other elements on the page will ignore the absolute element.</li>
+                    <li>Absolute element will be positioned relative to its closest positioned parent element.</li>
+                    <li>top, bottom, left, right</li>
+                    <li>Can be specify in pixels, ems, %</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>fixed</td>
+            <td>
+                <ul>
+                    <li>Fix the element to specific position on the page regardless of scrolling.</li>
+                    <li>top, bottom, left, right</li>
+                    <li>Can be specify in pixels, ems, %</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>sticky</td>
+            <td>
+                <ul>
+                    <li>Keep element flow as the user scroll, but sticks to a specific position.</li>
+                    <li>top, bottom, left, right</li>
+                    <li>Can be specify in pixels, ems, %</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="category">z-index</td>
+            <td colspan="2">Controls how far back / forward the element should appear on the webpage.</td>
+        </tr>
+
+
+        <tr>
+            <td class="category">float</td>
+            <td colspan="2">
+                <ul>
+                    <li>Moving element as far left / right</li>
+                    <li>left, right</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="category">clear</td>
+            <td colspan="2">
+                <ul>
+                    <li>Controls the flow next to float elements.</li>
+                    <li>left, right, both, none</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="category" rowspan="4">Display</td>
+        </tr>
+        <tr>
+            <td>inline</td>
+            <td>
+                <ul>
+                    <li>Element have a box that wraps tightly around their content</li>
+                    <li>Only take up the amount of space necessary to display their content</li>
+                    <li>Do not require a new line after each element</li>
+                    <br>
+                    <li>Cannot alter size by height or width properties</li>
+                    <li>&lt;a&gt;&lt;/a&gt;, &lt;em&gt;&lt;/em&gt;, &lt;strong&gt;&lt;/strong&gt;</li>
+                    </div>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>block</td>
+            <td>
+                <ul>
+                    <li>Element display in different line</li>
+                    <li>Element fill the entire width of the page</li>
+                    <li>&lt;h1&gt;&lt;/h1&gt;, &lt;p&gt;&lt;/p&gt;, &lt;div&gt;&lt;/div&gt;, &lt;footer&gt;&lt;/footer&gt;</li>
+                </ul>
+                <br><br>
+                <p class="title">Display: Block</p>
+                <div class='block'>
+                    <div class='box'>
+                        <h4>1</h4>
+                    </div>
+                    <div class='box'>
+                        <h4>2</h4>
+                    </div>
+                    <div class='box'>
+                        <h4>3</h4>
+                    </div>
+                </div>
+            </td>
+
+        </tr>
+        <tr>
+            <td>inline-block</td>
+            <td>
+                <ul>
+                    <li>Combination of inline and block</li>
+                    <li>Element appear next to each other, new line if not enough space</li>
+                    <li>Can alter dimensions by height and width properties</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+<!---------------- CSS - Flexbox ------------------>
+    <div id="css-flexbox">
+        <table>
+         <tr>
+            <th colspan="100">CSS - Flexbox</th>
+        </tr>
+        <tr>
+            <td class="category" rowspan="3">Display</td>
+        </tr>
+        <tr>
+            <td>flex</td>
+            <td>
+                <ul>
+                    <li>Change element to a block-level container with flex item inside of it.</li>
+                    <li>Child elements will not begin on new lines.</li>
+                </ul>
+                <br>
+                    <div class='container flex'>
+                        <div class='box'>
+                            <h4>1</h4>
+                        </div>
+                        <div class='box'>
+                            <h4>2</h4>
+                        </div>
+                        <div class='box'>
+                            <h4>3</h4>
+                        </div>
+                    </div>
+                    <div class='container flex'>
+                        <div class='box'>
+                            <h4>1</h4>
+                        </div>
+                        <div class='box'>
+                            <h4>2</h4>
+                        </div>
+                        <div class='box'>
+                            <h4>3</h4>
+                        </div>
+                    </div>
+            </td>
+        </tr>
+        <tr>
+            <td>inline-flex</td>
+            <td>
+                <ul>
+                    <li>Allows multiple flex containers to appear inline with each other.</li>
+                </ul>
+                <br>
+                <div class='inline-flex'>
+                    <div class='box'>
+                        <h4>1</h4>
+                    </div>
+                    <div class='box'>
+                        <h4>2</h4>
+                    </div>
+                    <div class='box'>
+                        <h4>3</h4>
+                    </div>
+                </div>
+                <div class='inline-flex'>
+                    <div class='box'>
+                        <h4>1</h4>
+                    </div>
+                    <div class='box'>
+                        <h4>2</h4>
+                    </div>
+                    <div class='box'>
+                        <h4>3</h4>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+            <tr>
+                <td class="category" rowspan="6">justify-content</td>
+            </tr>
+            <tr>
+                <td>flex-start</td>
+                <td>
+                    <div class='container' id='flex-start'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>flex-end</td>
+                <td>
+                    <div class='container' id='flex-end'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>center</td>
+                <td>
+                    <div class='container' id='center'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>space-around</td>
+                <td>
+                    <div class='container' id='space-around'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>space-between</td>
+                <td>
+                    <div class='container' id='space-between'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                    </div>
+                </td>
+            </tr>
+            </td>
+        </tr>
+
+           <tr>
+                <td class="category" rowspan="4">align-items</td>
+           </tr>
+           <tr>
+               <td>flex-start</td>
+               <td>
+                   <div class='container' id='align-flex-start'>
+                       <div class='box'><h4>1</h4></div>
+                       <div class='box'><h4>2</h4></div>
+                       <div class='box'><h4>3</h4></div>
+                   </div>
+               </td>
+           </tr>
+           <tr>
+               <td>flex-end</td>
+               <td>
+                   <div class='container' id='align-flex-end'>
+                       <div class='box'><h4>1</h4></div>
+                       <div class='box'><h4>2</h4></div>
+                       <div class='box'><h4>3</h4></div>
+                   </div>
+               </td>
+           </tr>
+            <tr>
+                <td>center</td>
+                <td>
+                    <div class='container' id='align-center'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                    </div>
+                </td>
+            </tr>
+
+        <tr>
+            <td class="category">flex-grow</td>
+            <td colspan="2">
+                <ul>
+                    <li>Allow to specify if items should grow to fill a container, and in what proportions.</li>
+                    <li>flex-grow: number</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="category">flex-shrink</td>
+            <td colspan="2">
+                <ul>
+                    <li>Allow to specify which items will shrink, and in what proportions.</li>
+                    <li>flex-shrink: number</li>
+                    <li>default: 0</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="category">flex-basis</td>
+            <td colspan="2">
+                <ul>
+                    <li>Allow to specify the width of item before it stretches or shrinks.</li>
+                    <li>flex-basis: number</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="category">flex</td>
+            <td colspan="2">
+                <ul>
+                    <li>Shorthand of flex-grow, flex-shrink, flex-basis</li>
+                    <li>flex: flex-grow flex-shrink flex-basis</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="category" rowspan="4">flex-wrap</td>
+        </tr>
+        <tr>
+            <td>wrap</td>
+            <td>
+                <p>Child elements that don’t fit into a row will move down to the next line</p><br>
+                <div class='container' id='wrap'>
+                    <div class='box'><h4>1</h4></div>
+                    <div class='box'><h4>2</h4></div>
+                    <div class='box'><h4>3</h4></div>
+                    <div class='box'><h4>4</h4></div>
+                    <div class='box'><h4>5</h4></div>
+                    <div class='box'><h4>6</h4></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>wrap-reverse</td>
+            <td>
+                <p>reverse the order of the rows of wrap</p><br>
+                <div class='container' id='wrap-reverse'>
+                    <div class='box'><h4>1</h4></div>
+                    <div class='box'><h4>2</h4></div>
+                    <div class='box'><h4>3</h4></div>
+                    <div class='box'><h4>4</h4></div>
+                    <div class='box'><h4>5</h4></div>
+                    <div class='box'><h4>6</h4></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>nowrap</td>
+            <td>
+                <p>prevents items from wrapping</p><br>
+                <div class='container' id='nowrap'>
+                    <div class='box'><h4>1</h4></div>
+                    <div class='box'><h4>2</h4></div>
+                    <div class='box'><h4>3</h4></div>
+                    <div class='box'><h4>4</h4></div>
+                    <div class='box'><h4>5</h4></div>
+                    <div class='box'><h4>6</h4></div>
+                </div>
+            </td>
+        </tr>
+
+            <tr>
+                <td class="category" rowspan="6">align-content</td>
+            </tr>
+            <tr>
+                <td>flex-start</td>
+                <td>
+                    <p>all rows of elements positioned at the top with no extra space between.</p><br>
+                    <div class='container' id='align-content-flex-start'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                        <div class='box'><h4>4</h4></div>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>flex-end</td>
+                <td>
+                    <p>all rows of elements positioned at the bottom with no extra space between.</p><br>
+                    <div class='container' id='align-content-flex-end'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                        <div class='box'><h4>4</h4></div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>center</td>
+                <td>
+                    <p>all rows of elements positioned at the center with no extra space between.</p><br>
+                    <div class='container' id='align-content-center'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                        <div class='box'><h4>4</h4></div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td>space-between</td>
+                <td>
+                    <p>all rows of elements will be spaced evenly <br> from the top to the bottom with no space above and below.</p><br>
+                    <div class='container' id='align-content-space-between'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                        <div class='box'><h4>4</h4></div>
+                        <div class='box'><h4>5</h4></div>
+                        <div class='box'><h4>6</h4></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>space-around</td>
+                <td>
+                    <p>all rows of elements will be spaced evenly <br> from the top to the bottom with same amount of space.</p><br>
+                    <div class='container' id='align-content-space-around'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                        <div class='box'><h4>4</h4></div>
+                        <div class='box'><h4>5</h4></div>
+                        <div class='box'><h4>6</h4></div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="category" rowspan="5">flex-direction</td>
+            </tr>
+            <tr>
+                <td>column</td>
+                <td>
+                    <div class='container' id='column'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                        <div class='box'><h4>4</h4></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>column-reverse</td>
+                <td>
+                    <div class='container' id='column-reverse'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                        <div class='box'><h4>4</h4></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>row</td>
+                <td>
+                    <div class='container' id='row'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                        <div class='box'><h4>4</h4></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>row-reverse</td>
+                <td>
+                    <div class='container' id='row-reverse'>
+                        <div class='box'><h4>1</h4></div>
+                        <div class='box'><h4>2</h4></div>
+                        <div class='box'><h4>3</h4></div>
+                        <div class='box'><h4>4</h4></div>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="category">flex-flow</td>
+                <td colspan="2">flex-flow: flex-direction flex-wrap</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+<!---------------- CSS - Links & Button States ------------------>
+
+    <div id="css-link-button">
+        <table>
+            <tr>
+                <th colspan="100">CSS - Links & Button States</th>
+            </tr>
+            <tr>
+                <td colspan="3"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target="_blank">Pseudo-Classes</a></td>
+            </tr>
+            <tr>
+                <td class="category" rowspan="2">Links</td>
+            </tr>
+            <tr>
+                <td>text-decoration</td>
+                <td>How the link text shows on the page.</td>
+            </tr>
+
+            <tr>
+                <td class="category" rowspan="6">Hover States</td>
+            </tr>
+            <tr>
+                <td>:hover</td>
+                <td>Used to style element when user's pointer hovers over it.</td>
+            </tr>
+            <tr>
+                <td>:link</td>
+                <td>Matches link that not yet visited.</td>
+            </tr>
+            <tr>
+                <td>:active</td>
+                <td>Matches when an item is being activated by the user.</td>
+            </tr>
+            <tr>
+                <td>:visited</td>
+                <td>Matches link that already visited.</td>
+            </tr>
+            <tr>
+                <td>cursor</td>
+                <td>Change the user's cursor appearance.</td>
+            </tr>
+        </table>
+    </div>
+
+    <!---------------- CSS - Sizing Elements ------------------>
+
+    <div id="css-sizing">
+        <table>
+            <tr>
+                <th colspan="100">CSS - Sizing Elements</th>
+            </tr>
+
+            <tr>
+                <td class="category">em</td>
+                <td>
+                    <ul>
+                        <li>Default base font-size set by the browser if none is given.</li>
+                        <li>if base font-size = 16px, then 1em = 16px, 2em = 32px...</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="category">rem</td>
+                <td>
+                    <ul>
+                        <li>root em</li>
+                        <li>Check root elements to size font.</li>
+                        <li>root element is &lt;html&gt;</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td class="category">%</td>
+                <td>
+                    <ul>
+                        <li>often used to size box-model values (width and height, padding, border, and margins). </li>
+                    </ul>
+                </td>
+            </tr>
+
+
+
+
+
+        </table>
+    </div>
+
+    <table>
+    </table>
+
+
+</body>
+</html>
