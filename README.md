@@ -1,2 +1,2 @@
-# HTML-CSS-CheatSheet
+# Summarize CheatSheet
 a summary that conclude common html and css elements with examples.
